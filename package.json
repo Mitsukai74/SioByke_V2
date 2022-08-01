@@ -1,0 +1,19 @@
+{
+  "name": "sionbyke_v2",
+  "version": "1.0.0",
+  "description": "Segunda versión de la store de SION",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitsukai74/SioByke_V2.git"
+  },
+  "author": "Angel Barón Bernate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitsukai74/SioByke_V2/issues"
+  },
+  "homepage": "https://github.com/Mitsukai74/SioByke_V2#readme"
+}
