@@ -10,6 +10,21 @@ const nuevoProducto = (imagenUrl,nombre,descripcion) => {
         <p>${descripcion}</p>
         </img>a href="">Ver producto</a>
     </div>
-    `
+    `;
+    card.innerHTML = contenido;
+    card.classList.add("card");
+    return card;
     
 };
+const productos = document.querySelector("[datos-productos]");
+const render = async () => {
+    try {
+        const listaProductos = await productos_servicios.listaProductos();
+        listaProductos.forEach(element => {
+        productos.appendChild(nuevoProducto(element.imagenUrl,element.nombre,element.descripcion))            
+        });
+    }catch(error){
+        console.log(error);
+    }
+}
+render();
